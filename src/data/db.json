@@ -1,0 +1,46 @@
+{
+  "expenses": [
+    {
+      "id": 1,
+      "title": "Monthly Home Rent",
+      "amount": "3500",
+      "isPaid": 0
+    },
+    {
+      "id": 2,
+      "title": "Baba Pampers",
+      "amount": "1000",
+      "isPaid": 0
+    },
+    {
+      "title": "Eyu Tea",
+      "amount": 2500,
+      "id": 3,
+      "isPaid": 0
+    },
+    {
+      "title": "Tamrat Tea",
+      "amount": 3000,
+      "id": 4,
+      "isPaid": 0
+    },
+    {
+      "title": "Here",
+      "amount": 6575,
+      "id": 5,
+      "isPaid": 0
+    },
+    {
+      "title": "Baba Wipe",
+      "amount": 300,
+      "id": 6,
+      "isPaid": 0
+    },
+    {
+      "title": "Nido",
+      "amount": 1300,
+      "id": 7,
+      "isPaid": 0
+    }
+  ]
+}
