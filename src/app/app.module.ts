@@ -11,9 +11,16 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
 import { ExpenseService } from './../data/expense.service';
+import { TotalExpenseComponent } from './total-expense/total-expense.component';
+import { SharedModule } from './shared/shared.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { ExpenseComponent } from './expense/expense.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TotalExpenseComponent,
+    ExpenseComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +32,9 @@ import { ExpenseService } from './../data/expense.service';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule,
+    FlexLayoutModule
   ],
   providers: [
     ExpenseService

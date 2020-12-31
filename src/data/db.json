@@ -1,46 +1,130 @@
 {
   "expenses": [
     {
-      "id": 1,
-      "title": "Monthly Home Rent",
-      "amount": "3500",
-      "isPaid": 0
-    },
-    {
-      "id": 2,
-      "title": "Baba Pampers",
-      "amount": "1000",
-      "isPaid": 0
-    },
-    {
       "title": "Eyu Tea",
-      "amount": 2500,
+      "amount": 2000,
+      "id": 1,
+      "isPaid": 0
+    },
+    {
+      "title": "Asbeza",
+      "amount": 2000,
+      "id": 2,
+      "isPaid": 0
+    },
+    {
+      "title": "Internet Package",
+      "amount": 1500,
       "id": 3,
       "isPaid": 0
     },
     {
-      "title": "Tamrat Tea",
-      "amount": 3000,
+      "title": "Manay",
+      "amount": 500,
       "id": 4,
       "isPaid": 0
     },
     {
-      "title": "Here",
-      "amount": 6575,
-      "id": 5,
-      "isPaid": 0
+      "title": "Yeshiwork",
+      "amount": 3500,
+      "id": 5
     },
     {
-      "title": "Baba Wipe",
+      "title": "Rent",
+      "amount": 3500,
+      "id": 6
+    },
+    {
+      "title": "Pampers",
+      "amount": 1000,
+      "id": 7
+    },
+    {
+      "title": "Milk Rent",
+      "amount": 800,
+      "id": 8
+    },
+    {
+      "title": "Achu",
+      "amount": 500,
+      "id": 9
+    },
+    {
+      "title": "Equb",
+      "amount": 10000,
+      "id": 10,
+      "isPaid": 1
+    },
+    {
+      "title": "Charity",
+      "amount": 3000,
+      "id": 11
+    },
+    {
+      "title": "Tax + Saving",
+      "amount": 20000,
+      "id": 12
+    },
+    {
+      "title": "Wipe",
       "amount": 300,
-      "id": 6,
-      "isPaid": 0
+      "id": 13
     },
     {
-      "title": "Nido",
-      "amount": 1300,
-      "id": 7,
-      "isPaid": 0
+      "title": "Tame Tea",
+      "amount": 3000,
+      "id": 14
+    },
+    {
+      "title": "Qircha",
+      "amount": 5000,
+      "id": 15
+    },
+    {
+      "title": "Qibe",
+      "amount": 350,
+      "id": 16
+    },
+    {
+      "title": "Equb5000",
+      "amount": 5000,
+      "id": 17
+    },
+    {
+      "title": "Tigist Eyu",
+      "amount": 1000,
+      "id": 18
+    },
+    {
+      "title": "Tigist Beg",
+      "amount": 2500,
+      "id": 19
+    },
+    {
+      "title": "Doro Aberu",
+      "amount": 400,
+      "id": 20
+    },
+    {
+      "title": "Doro Eyu",
+      "amount": 600,
+      "id": 21
+    },
+    {
+      "title": "Abel Rent",
+      "amount": 2000,
+      "id": 22
+    },
+    {
+      "title": "Manay Asbeza",
+      "amount": 1550,
+      "id": 23
+    },
+    {
+      "title": "Fire 3000",
+      "amount": 3000,
+      "id": 24,
+      "isPaid": 1
     }
   ]
 }

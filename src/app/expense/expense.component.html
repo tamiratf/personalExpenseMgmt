@@ -1,0 +1,47 @@
+<div class="fbItemC">
+    <div class="item-search">
+      <form autocomplete="off" novalidate [formGroup]="expenseForm" (ngSubmit)="addNewExpense()">
+      <table class="table">
+        <tr>
+          <td>
+            <input type="text" class="form-control" placeholder="Enter Title" formControlName="title">
+          </td>
+          <td>
+            <input type="number" class="form-control" placeholder="Enter Amount" formControlName = "amount">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label *ngIf="invalidForm" class="error-message"> Please Fill Both Input Fields</label>
+          </td>
+          <td>
+            <button class="btn btn-primary" type="submit">Add New Expense</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    </div>
+    <div class="item-total">
+      <app-total-expense></app-total-expense>
+    </div>
+  </div>
+  <div class="item-table">
+    <table class="table table-bordered">
+      <th>Id</th>
+      <th>Title</th>
+      <th>Amount</th>
+      <th>is Paid</th>
+      <th>Action</th>
+      <tr *ngFor="let expense of expenses" [ngClass]="{'item-paid' : expense.isPaid}">
+        <td> {{ expense.id }} </td>
+        <td> {{ expense.title }} </td>
+        <td> {{ expense.amount }} </td>
+        <td> <input type="checkbox" [checked]="expense.isPaid" (click)="updateExpense(expense);"> </td>
+        <td>
+          <mat-icon aria-hidden="false" aria-label="Example home icon" (click)="removeExpense(expense.id)">delete_forever
+          </mat-icon>
+        </td>
+      </tr>
+    </table>
+  
+  </div>

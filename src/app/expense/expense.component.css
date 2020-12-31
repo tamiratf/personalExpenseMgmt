@@ -1,0 +1,18 @@
+.error-message {
+    color: red;
+}
+
+.item-paid{
+    background-color: royalblue;
+}
+
+
+.fbItemC {
+    display: flex;
+}
+.item-search {
+    width: 80%;
+}
+.item-total {
+    width: 20%;
+}

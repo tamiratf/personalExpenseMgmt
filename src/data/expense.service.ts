@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { __assign } from 'tslib';
 import { ExpenseModel} from './expense.model';
@@ -10,10 +10,20 @@ import * as _ from 'lodash';
   providedIn: 'root'
 })
 export class ExpenseService {
+
+  private expenses$ = new BehaviorSubject([]);
   private REST_API_SERVER = "http://localhost:3000/expenses";
 
   constructor(private httpClient: HttpClient) { }
 
+
+  getExpensesObservable(){
+    return this.expenses$;
+  }
+
+  setExpensesObservable(expenses) {
+    this.expenses$.next(expenses);
+  }
   getAllExpenses(): Observable<any> {
     return this.httpClient.get(this.REST_API_SERVER).pipe(
       map(expenses => {
